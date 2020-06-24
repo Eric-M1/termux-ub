@@ -5,7 +5,7 @@ from time import sleep
 
 os.system('clear')
 print('''
-[-] Choose an operating mode:
+[#] Choose an operating mode:
 [+] 1 - Linux and time
 [+] 2 - Linux and all
 [+] 3 - Empty console
@@ -38,9 +38,8 @@ try:
     PS1='> '
     python /data/data/com.termux/files/usr/etc/code_ld.py''')
         print('[+] Installation...')
-        print('[#] Console reboot')
-        sleep(1)
-        os.system('exit')
+        print('[#] Reboot console ')
+        sleep(1.5)
 
     # ---- code_all.py
     elif n_o == '2':
@@ -65,9 +64,8 @@ try:
     PS1='> '
     python /data/data/com.termux/files/usr/etc/code_all.py''')
         print('[+] Installation...')
-        print('[#] Console reboot')
-        sleep(1)
-        os.system('exit')
+        print('[#] Reboot console')
+        sleep(1.5)
 
     # ---- Empty
     elif n_o == '3':
@@ -88,9 +86,8 @@ try:
     PS1='$ '
     clear''')
         print('[+] Installation...')
-        print('[#] Console reboot')
-        sleep(1)
-        os.system('bash')
+        print('[#] Reboot console ')
+        sleep(1.5)
 
     else:
         print('[!] Choose function!')
