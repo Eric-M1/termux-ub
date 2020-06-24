@@ -23,7 +23,10 @@ try:
         elif os.path.exists("/data/data/com.termux/files/usr/etc/code_ld.py"):    
             os.remove("/data/data/com.termux/files/usr/etc/code_ld.py")
             print('[-] Saved file deleted!')
-
+            
+        elif os.path.exists("/data/data/com.termux/files/usr/etc/motd"):
+            os.remove("/data/data/com.termux/files/usr/etc/motd")
+            
         shutil.copy2("code_ld.py", "/data/data/com.termux/files/usr/etc/")
 
         open('/data/data/com.termux/files/usr/etc/bash.bashrc', 'w').write('''if [ -x /data/data/com.termux/files/usr/libexec/termux/command-not-found ]; then
@@ -48,7 +51,10 @@ try:
         elif os.path.exists("/data/data/com.termux/files/usr/etc/code_ld.py"):    
             os.remove("/data/data/com.termux/files/usr/etc/code_ld.py")
             print('[-] Saved file deleted!')
-
+        
+        elif os.path.exists("/data/data/com.termux/files/usr/etc/motd"):
+            os.remove("/data/data/com.termux/files/usr/etc/motd")
+            
         shutil.copy2("code_all.py", "/data/data/com.termux/files/usr/etc/")
         open('/data/data/com.termux/files/usr/etc/bash.bashrc', 'w').write('''if [ -x /data/data/com.termux/files/usr/libexec/termux/command-not-found ]; then
         command_not_found_handle() {
