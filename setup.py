@@ -84,7 +84,7 @@ try:
         print('[+] Installation...')
         print('[#] Console reboot')
         sleep(1)
-        os.system('exit')
+        os.system('bash')
 
     else:
         print('[!] Choose function!')
