@@ -5,7 +5,7 @@ from time import sleep
 
 os.system('clear')
 print('''
-[#] Choose an operating mode:
+[=] Choose an operating mode:
 [+] 1 - Linux and time
 [+] 2 - Linux and all
 [+] 3 - Empty console
